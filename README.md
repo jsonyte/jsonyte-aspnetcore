@@ -1,6 +1,6 @@
 # jsonyte-aspnetcore
 
-[![Docs](https://img.shields.io/badge/docs-wiki-blue.svg?style=for-the-badge)](https://github.com/jsonyte/jsonyte/wiki) [![NuGet](https://img.shields.io/nuget/v/Jsonyte.AspNetCore?style=for-the-badge)](https://www.nuget.org/packages/Jsonyte.AspNetCore) [![Discussions](https://img.shields.io/badge/DISCUSS-ON%20GITHUB-yellow?style=for-the-badge)](https://github.com/jsonyte/jsonyte/discussions) [![License](https://img.shields.io/github/license/jsonyte-aspnetcore/jsonyte?style=for-the-badge)](https://github.com/jsonyte/jsonyte-aspnetcore/blob/master/LICENSE)
+[![Docs](https://img.shields.io/badge/docs-wiki-blue.svg?style=for-the-badge)](https://github.com/jsonyte/jsonyte/wiki) [![NuGet](https://img.shields.io/nuget/v/Jsonyte.AspNetCore?style=for-the-badge)](https://www.nuget.org/packages/Jsonyte.AspNetCore) [![Discussions](https://img.shields.io/badge/DISCUSS-ON%20GITHUB-yellow?style=for-the-badge)](https://github.com/jsonyte/jsonyte/discussions) [![License](https://img.shields.io/github/license/jsonyte/jsonyte-aspnetcore?style=for-the-badge)](https://github.com/jsonyte/jsonyte-aspnetcore/blob/master/LICENSE)
 
 An ASP.NET Core implementation of the JSON:API specification using Jsonyte and `System.Text.Json`.
 
