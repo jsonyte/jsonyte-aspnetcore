@@ -18,4 +18,8 @@
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Jsonyte" Version="0.3.8" />
+  </ItemGroup>
+
 </Project>
