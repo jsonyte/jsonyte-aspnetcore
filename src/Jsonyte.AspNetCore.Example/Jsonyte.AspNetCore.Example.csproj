@@ -10,12 +10,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="JsonApiDotNetCore" Version="4.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Jsonyte.AspNetCore\Jsonyte.AspNetCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
 
 </Project>

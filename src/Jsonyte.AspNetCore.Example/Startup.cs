@@ -1,7 +1,6 @@
-﻿using JsonApiDotNetCore.Configuration;
-using JsonApiDotNetCore.Services;
-using Jsonyte.AspNetCore.Example.Models;
+﻿using Jsonyte.AspNetCore.Example.Models;
 using Jsonyte.AspNetCore.Example.Repositories;
+using Jsonyte.AspNetCore.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,14 +19,12 @@ namespace Jsonyte.AspNetCore.Example
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services
-                .AddScoped<IResourceService<Article>, ArticleService>()
-                .AddResourceRepository<ArticleRepository>();
+            services.AddSingleton<IRepository<Article>, ArticleRepository>();
 
             services.AddControllers();
 
             services
-                .AddJsonApi(x => { }, x => x.AddCurrentAssembly())
+                .AddJsonApi()
                 .AddSwaggerGen();
         }
 
@@ -37,9 +34,7 @@ namespace Jsonyte.AspNetCore.Example
                 .UseSwagger()
                 .UseSwaggerUI(x => x.SwaggerEndpoint("/swagger/v1/swagger.json", "Example API v1"))
                 .UseRouting()
-                .UseJsonApi();
-
-            app
+                .UseJsonApi()
                 .UseAuthorization()
                 .UseEndpoints(endpoints =>
                 {

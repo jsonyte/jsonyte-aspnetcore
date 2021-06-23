@@ -8,6 +8,7 @@ namespace Jsonyte.AspNetCore.Mvc.ApplicationModels
         {
             foreach (var controller in application.Controllers)
             {
+                var name = controller.ControllerName;
             }
         }
     }

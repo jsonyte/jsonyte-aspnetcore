@@ -1,11 +1,7 @@
-﻿using JsonApiDotNetCore.Resources;
-using JsonApiDotNetCore.Resources.Annotations;
-
-namespace Jsonyte.AspNetCore.Example.Models
+﻿namespace Jsonyte.AspNetCore.Example.Models
 {
-    public class Tag : Identifiable
+    public class Tag
     {
-        [Attr]
         public string Value { get; set; }
     }
 }

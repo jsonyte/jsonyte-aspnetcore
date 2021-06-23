@@ -1,16 +1,10 @@
-﻿using JsonApiDotNetCore.Configuration;
-using JsonApiDotNetCore.Controllers;
-using JsonApiDotNetCore.Services;
-using Jsonyte.AspNetCore.Example.Models;
-using Microsoft.Extensions.Logging;
+﻿using Jsonyte.AspNetCore.Example.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Jsonyte.AspNetCore.Example.Controllers
 {
-    public class ArticlesController : JsonApiController<Article>
+    [Route("api/v1/articles")]
+    public class ArticlesController : JsonApiControllerBase<Article>
     {
-        public ArticlesController(IJsonApiOptions options, ILoggerFactory loggerFactory, IResourceService<Article> resourceService)
-            : base(options, loggerFactory, resourceService)
-        {
-        }
     }
 }
