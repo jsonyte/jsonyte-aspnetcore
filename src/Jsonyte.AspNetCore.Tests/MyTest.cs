@@ -29,8 +29,6 @@ namespace Jsonyte.AspNetCore.Tests
             };
 
             var options = new JsonSerializerOptions().AddJsonApi();
-
-            var json = JsonSerializer.Serialize(model, options);
         }
     }
 }

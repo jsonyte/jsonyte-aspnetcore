@@ -1,7 +1,4 @@
-﻿using Jsonyte.AspNetCore.Example.Models;
-using Jsonyte.AspNetCore.Example.Repositories;
-using Jsonyte.AspNetCore.Repository;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,7 +16,7 @@ namespace Jsonyte.AspNetCore.Example
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IRepository<Article>, ArticleRepository>();
+            //services.AddSingleton<IRepository<Article>, ArticleRepository>();
 
             services.AddControllers();
 
