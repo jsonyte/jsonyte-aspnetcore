@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Jsonyte" Version="0.5.1" />
+    <PackageReference Include="Jsonyte" Version="0.6.0" />
   </ItemGroup>
 
 </Project>
