@@ -18,8 +18,4 @@
     <ProjectReference Include="..\Jsonyte.AspNetCore\Jsonyte.AspNetCore.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
